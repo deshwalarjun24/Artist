@@ -1,0 +1,198 @@
+/* Project Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    width: 90%;
+    max-width: 1200px;
+    margin: 5% auto;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: var(--color-secondary);
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.main-image {
+    flex: 2;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.thumbnail-gallery {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px 0;
+}
+
+.project-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--color-dark);
+}
+
+.project-meta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.meta-label {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-gray);
+    margin-bottom: 5px;
+}
+
+.meta-value {
+    font-size: 16px;
+    color: var(--color-dark);
+}
+
+.project-description, .project-process {
+    margin-bottom: 25px;
+}
+
+.project-description h3, .project-process h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--color-dark);
+}
+
+.project-description p, .project-process p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-gray-dark);
+}
+
+/* Responsive Styles for Modal */
+@media (max-width: 992px) {
+    .modal-content {
+        width: 95%;
+        padding: 30px;
+    }
+    
+    .project-meta {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 25px;
+        margin: 10% auto;
+    }
+    
+    .project-gallery {
+        flex-direction: column;
+    }
+    
+    .thumbnail-gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .thumbnail {
+        width: calc(33.333% - 10px);
+        height: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-content {
+        padding: 20px;
+        margin: 15% auto;
+    }
+    
+    .close-modal {
+        top: 15px;
+        right: 15px;
+        font-size: 24px;
+    }
+    
+    .project-info h2 {
+        font-size: 24px;
+    }
+    
+    .thumbnail {
+        width: calc(50% - 5px);
+        height: 70px;
+    }
+    
+    .meta-label {
+        font-size: 12px;
+    }
+    
+    .meta-value {
+        font-size: 14px;
+    }
+}

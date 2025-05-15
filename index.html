@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Portfolio | Creative Visionary</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    
+    <!-- Fixed Side Navigation -->
+    <div class="side-nav">
+        <div class="side-nav-content">
+            <div class="logo">
+                <span class="artist-logo">Artistry</span>
+            </div>
+            <ul class="side-menu">
+                <li><a href="#home" class="side-link">Home</a></li>
+                <li><a href="#about" class="side-link">About</a></li>
+                <li><a href="#portfolio" class="side-link">Portfolio</a></li>
+                <li><a href="#process" class="side-link">Process</a></li>
+                <li><a href="#contact" class="side-link">Contact</a></li>
+            </ul>
+            <div class="side-social">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="home-bg-overlay"></div>
+        <div class="home-content">
+            <div class="home-text-container">
+                <h1 class="reveal-text">Creative <span class="accent">Visionary</span></h1>
+                <p class="subtitle reveal-text-delay">Transforming imagination into visual poetry through innovative artistic expression</p>
+                <div class="cta-buttons">
+                    <a href="#portfolio" class="btn btn-primary">Explore Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="home-featured-image">
+            <img src="https://images.unsplash.com/photo-1501366062246-723b4d3e4eb6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Featured Artwork">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">The Artist Behind <br>The Canvas</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="artist-image" style="background-image: url('https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="years">10+</span>
+                        <span class="text">Years of<br>Artistic<br>Journey</span>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <p>I am a passionate artist dedicated to creating visual experiences that evoke emotion and inspire imagination. My work explores the boundaries between reality and abstraction, finding beauty in the unexpected.</p>
+                    
+                    <p>With over a decade of experience in various mediums, I've developed a distinctive style that combines traditional techniques with contemporary vision. Each piece tells a story, inviting viewers to interpret and connect with the art in their own unique way.</p>
+                    
+                    <div class="skills">
+                        <div class="skill-category">
+                            <h3>Mediums</h3>
+                            <ul>
+                                <li>Oil Painting</li>
+                                <li>Watercolor</li>
+                                <li>Digital Art</li>
+                                <li>Mixed Media</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>Specialties</h3>
+                            <ul>
+                                <li>Abstract Expressionism</li>
+                                <li>Portrait Studies</li>
+                                <li>Landscape Composition</li>
+                                <li>Conceptual Illustration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn-text">Let's collaborate <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Artistic <br>Portfolio</h2>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="paintings">Paintings</button>
+                <button class="filter-btn" data-filter="digital">Digital</button>
+                <button class="filter-btn" data-filter="mixed">Mixed Media</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="paintings">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1549887552-cb1071d3e5ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80" alt="Abstract Painting">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Chromatic Dreams</h3>
+                                <p>Oil on Canvas, 2024</p>
+                                <a href="#" class="view-project">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="digital">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Digital Artwork">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Digital Metamorphosis</h3>
+                                <p>Digital Art, 2023</p>
+                                <a href="#" class="view-project">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="mixed">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=745&q=80" alt="Mixed Media Art">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Textural Symphony</h3>
+                                <p>Mixed Media, 2024</p>
+                                <a href="#" class="view-project">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="paintings">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Watercolor Painting">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Ethereal Landscapes</h3>
+                                <p>Watercolor, 2023</p>
+                                <a href="#" class="view-project">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="digital">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Digital Illustration">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Futuristic Visions</h3>
+                                <p>Digital Illustration, 2024</p>
+                                <a href="#" class="view-project">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="mixed">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1582561424760-0321336c70e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=689&q=80" alt="Collage Art">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Fragmented Reality</h3>
+                                <p>Collage & Acrylic, 2023</p>
+                                <a href="#" class="view-project">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-cta">
+                <a href="#contact" class="btn-primary">Commission Custom Art</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Approach</span>
+                <h2 class="section-title">Creative <br>Process</h2>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content">
+                        <h3>Inspiration & Concept</h3>
+                        <p>Every creation begins with inspiration. I gather ideas from nature, human emotions, cultural elements, and personal experiences to develop a unique concept.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content">
+                        <h3>Sketches & Studies</h3>
+                        <p>I explore the concept through preliminary sketches and studies, experimenting with composition, color palettes, and techniques to find the perfect approach.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content">
+                        <h3>Creation & Development</h3>
+                        <p>The main creation phase involves bringing the concept to life through layers of detail, texture, and emotion, allowing the artwork to evolve organically.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">04</div>
+                    <div class="timeline-content">
+                        <h3>Refinement & Completion</h3>
+                        <p>The final stage involves careful refinement, adding finishing touches and ensuring the artwork effectively communicates its intended message and emotion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Client Words</span>
+                <h2 class="section-title">What People <br>Say</h2>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>"The commissioned piece exceeded all my expectations. The artist captured exactly what I envisioned but couldn't articulate. It's become the centerpiece of our home."</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Emma Thompson" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 15px;">
+                                </div>
+                                <div>
+                                    <div class="author-name">Emma Thompson</div>
+                                    <div class="author-title">Art Collector</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>"Working with this artist was a collaborative journey. They listened to my ideas and transformed them into something more beautiful than I could have imagined."</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Michael Chen" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 15px;">
+                                </div>
+                                <div>
+                                    <div class="author-name">Michael Chen</div>
+                                    <div class="author-title">Interior Designer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>"The attention to detail and emotional depth in each piece is extraordinary. I've purchased multiple works and each one speaks to me in a different way."</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Sophia Rodriguez" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 15px;">
+                                </div>
+                                <div>
+                                    <div class="author-name">Sophia Rodriguez</div>
+                                    <div class="author-title">Gallery Owner</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="prev-btn"><i class="fas fa-arrow-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="next-btn"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Create <br>Together</h2>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>I'm interested in freelance opportunities, commissions, and collaborations. Feel free to reach out with any inquiries or just to say hello.</p>
+                    
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info-text">
+                                <h4>Email</h4>
+                                <p>hello@artisticportfolio.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-phone"></i></div>
+                            <div class="info-text">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info-text">
+                                <h4>Studio</h4>
+                                <p>Creative District, New York, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="artist-logo">Artistry</span>
+                    <p>Creating visual poetry since 2015</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#process">Process</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-legal">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Copyright Notice</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Artistic Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="project-modal">
+        <div class="modal-content">
+            <div class="modal-close"><i class="fas fa-times"></i></div>
+            <div class="modal-body">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
